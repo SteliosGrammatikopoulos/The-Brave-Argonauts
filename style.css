@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    background-color: #0073e6;
+    background-color: #00509e;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -16,17 +16,35 @@ header {
 nav ul {
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px;
+    display: inline;
+    margin: 0 20px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+}
+
+.hero {
+    background: url('travel-hero.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
 }
 
 .packages {
@@ -40,7 +58,7 @@ nav ul li a {
 
 .package-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -49,6 +67,12 @@ nav ul li a {
     border: 1px solid #ddd;
     padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.package img {
+    width: 100%;
+    height: auto;
 }
 
 .contact {
@@ -60,7 +84,8 @@ nav ul li a {
 footer {
     background-color: #333;
     color: white;
-    text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
+    text-align: center;
+    margin-top: 40px;
 }
+
